@@ -83,7 +83,18 @@ class PhpSdk
 
 You can also add a namespace to the class. For example, if the package name is php-sdk, the namespace should be PhpSdk.
 
-And an example folder for testing the SDK.
+And an example folder for testing the SDK and an example file in it. For example, if the package name is php-sdk, the example file should be named index.php.
+
+```php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use PhpSdk\PhpSdk;
+
+$phpSdk = new PhpSdk();
+```
+
 
 
 This is the file structure of the project:
@@ -122,6 +133,14 @@ Add the class to the composer.json file. The class should be added to the autolo
   }
 ```
 
+to verify if the schema is valid, run the following command:
+
+```bash
+composer validate
+```
+
+or read the documentation [here](https://getcomposer.org/doc/04-schema.md)
+
 ### Step 4: Install the dependencies
 
 Install the dependencies using Composer. The dependencies are defined in the composer.json file. For example, if the package name is php-sdk, the dependencies are defined in the composer.json file.
@@ -141,6 +160,22 @@ php example/index.php
 ### Step 6: Publish the SDK
 
 Publish the SDK to Packagist. Packagist is the main Composer repository. It aggregates public PHP packages installable with Composer.
+
+To publish the SDK to Packagist, you need to create an account on Packagist click [here](https://packagist.org/) to create an account.
+
+After creating an account, you need to create a new package on Packagist. To create a new package, click [here](https://packagist.org/packages/submit) to create a new package.
+
+add the public repository to the composer.json file. The public repository is used to publish the SDK to Packagist. For example, if the package name is php-sdk, the public repository is used to publish the SDK to Packagist.
+
+```json
+{
+    "name": "vendor/php-sdk",
+    "description": "A simple PHP SDK",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "
 
 ### Step 7: Install the SDK
 
