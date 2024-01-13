@@ -49,7 +49,7 @@ Create a new project folder and create a composer.json file in it. The composer.
 
 ```json
 {
-    "name": "vendor/php-sdk",
+    "name": "umeskia/umeskia-php-sdk",
     "description": "A simple PHP SDK",
     "version": "1.0.0",
     "authors": [
@@ -114,7 +114,7 @@ Add the class to the composer.json file. The class should be added to the autolo
 
 ```json
 {
-    "name": "vendor/php-sdk",
+    "name": "umeskia/umeskia-php-sdk",
     "description": "A simple PHP SDK",
     "version": "1.0.0",
     "authors": [
@@ -167,15 +167,7 @@ After creating an account, you need to create a new package on Packagist. To cre
 
 add the public repository to the composer.json file. The public repository is used to publish the SDK to Packagist. For example, if the package name is php-sdk, the public repository is used to publish the SDK to Packagist.
 
-```json
-{
-    "name": "vendor/php-sdk",
-    "description": "A simple PHP SDK",
-    "version": "1.0.0",
-    "authors": [
-        {
-            "name": "Your Name",
-            "email": "
+
 
 ### Step 7: Install the SDK
 
@@ -215,6 +207,13 @@ Uninstall the SDK using Composer. Composer is a tool for dependency management i
 
 ```bash
 composer remove php-sdk/php-sdk
+```
+
+
+I published the SDK on Packagist you can test it by running the following command:
+
+```bash
+composer require umeskia/umeskia-php-sdk
 ```
 
 
