@@ -1,5 +1,5 @@
 {
-    "name": "vendor/php-sdk",
+    "name": "umeskia/php-sdk",
     "description": "A simple PHP SDK",
     "version": "1.0.0",
     "authors": [
