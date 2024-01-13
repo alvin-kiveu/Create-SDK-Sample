@@ -1,0 +1,19 @@
+{
+    "name": "vendor/php-sdk",
+    "description": "A simple PHP SDK",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "123@example.com",
+            "homepage": "https://example.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PhpSdk\\": "src/"
+        }
+    }
+  }
+  

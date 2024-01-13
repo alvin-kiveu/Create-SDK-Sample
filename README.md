@@ -49,7 +49,7 @@ Create a new project folder and create a composer.json file in it. The composer.
 
 ```json
 {
-    "name": "php-sdk",
+    "name": "vendor/php-sdk",
     "description": "A simple PHP SDK",
     "version": "1.0.0",
     "authors": [
@@ -103,7 +103,7 @@ Add the class to the composer.json file. The class should be added to the autolo
 
 ```json
 {
-    "name": "php-sdk",
+    "name": "vendor/php-sdk",
     "description": "A simple PHP SDK",
     "version": "1.0.0",
     "authors": [
@@ -119,7 +119,7 @@ Add the class to the composer.json file. The class should be added to the autolo
             "PhpSdk\\": "src/"
         }
     }
-}
+  }
 ```
 
 ### Step 4: Install the dependencies
