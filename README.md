@@ -217,6 +217,18 @@ composer require umeskia/umeskia-php-sdk
 ```
 
 
+To publish the to production you need to create a tag as follows
+
+```bash
+git add .
+
+git commit -m "Prepare for stable release"
+
+git tag v1.0.0
+
+git push origin v1.0.0
+
+```
 
 
 
